@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AuraLanding from "./pages/AuraLanding";
+import OurStory from "./pages/OurStory";
+import AuraInsights from "./pages/AuraInsights";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +19,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AuraLanding />} />
+          <Route path="/our-story" element={<OurStory />} />
+          <Route path="/insights" element={<AuraInsights />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

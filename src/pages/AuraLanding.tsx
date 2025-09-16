@@ -207,7 +207,143 @@ const AuraLanding = () => {
         </div>
       </section>
 
-      {/* Section 7: Final CTA */}
+      {/* Section 7: Tech Specs */}
+      <section className="section-full bg-background">
+        <div className="max-w-6xl mx-auto space-y-16">
+          <h2 
+            className="section-headline text-center fade-in-up gradient-text"
+            data-animate-id="specs-title"
+          >
+            Tech Specs
+          </h2>
+          
+          {/* Product Images Side by Side */}
+          <div 
+            className="grid md:grid-cols-2 gap-12 mb-16 fade-in-up"
+            data-animate-id="specs-images"
+            style={{ animationDelay: '0.2s' }}
+          >
+            <div className="text-center">
+              <img 
+                src={auraAware} 
+                alt="Aura Aware 360" 
+                className="w-full max-w-sm mx-auto rounded-2xl shadow-premium mb-6"
+              />
+              <h3 className="text-2xl font-semibold">Aura Aware 360</h3>
+            </div>
+            <div className="text-center">
+              <img 
+                src={auraHero} 
+                alt="Aura ISR-360 Pro" 
+                className="w-full max-w-sm mx-auto rounded-2xl shadow-premium mb-6"
+              />
+              <h3 className="text-2xl font-semibold">Aura ISR-360 Pro</h3>
+            </div>
+          </div>
+
+          {/* Specifications Grid */}
+          <div 
+            className="space-y-12 fade-in-up"
+            data-animate-id="specs-content"
+            style={{ animationDelay: '0.4s' }}
+          >
+            {/* 360° Vision System */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold text-primary border-b border-border/20 pb-2">
+                360° Vision System
+              </h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="body-medium text-muted-foreground">2x 12MP sensors</p>
+                  <p className="body-medium text-muted-foreground">4K spherical video @ 30fps</p>
+                  <p className="body-medium text-muted-foreground">Real-time stitching</p>
+                </div>
+                <div>
+                  <p className="body-medium text-muted-foreground">2x 12MP sensors</p>
+                  <p className="body-medium text-muted-foreground">4K spherical video @ 30fps</p>
+                  <p className="body-medium text-muted-foreground">Real-time stitching</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Forward Sensor Suite */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold text-primary border-b border-border/20 pb-2">
+                Forward Sensor Suite
+              </h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="body-medium text-muted-foreground">—</p>
+                </div>
+                <div>
+                  <p className="body-medium text-muted-foreground">Thermal Core: 640x512 @ 60Hz</p>
+                  <p className="body-medium text-muted-foreground">25x Optical Zoom</p>
+                  <p className="body-medium text-muted-foreground">Stabilized gimbal system</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Image Processing & AI */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold text-primary border-b border-border/20 pb-2">
+                Image Processing & AI
+              </h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="body-medium text-muted-foreground">Aura Clarity Engine</p>
+                  <p className="body-medium text-muted-foreground">ARM Cortex-A78AE</p>
+                  <p className="body-medium text-muted-foreground">Real-time enhancement</p>
+                </div>
+                <div>
+                  <p className="body-medium text-muted-foreground">Aura Clarity Engine</p>
+                  <p className="body-medium text-muted-foreground">NVIDIA Jetson Orin NX</p>
+                  <p className="body-medium text-muted-foreground">AI target detection</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Construction & Environmental */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold text-primary border-b border-border/20 pb-2">
+                Construction & Environmental
+              </h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="body-medium text-muted-foreground">Carbon fiber housing</p>
+                  <p className="body-medium text-muted-foreground">IP54 rated</p>
+                  <p className="body-medium text-muted-foreground">Target weight: 280g</p>
+                </div>
+                <div>
+                  <p className="body-medium text-muted-foreground">CNC-milled 6061 aluminum</p>
+                  <p className="body-medium text-muted-foreground">IP54 rated</p>
+                  <p className="body-medium text-muted-foreground">Target weight: 420g</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Integration */}
+            <div className="space-y-6">
+              <h4 className="text-xl font-bold text-primary border-b border-border/20 pb-2">
+                Integration
+              </h4>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <p className="body-medium text-muted-foreground">DJI Payload SDK</p>
+                  <p className="body-medium text-muted-foreground">MAVLink compatible</p>
+                  <p className="body-medium text-muted-foreground">Universal mount system</p>
+                </div>
+                <div>
+                  <p className="body-medium text-muted-foreground">DJI Payload SDK</p>
+                  <p className="body-medium text-muted-foreground">MAVLink compatible</p>
+                  <p className="body-medium text-muted-foreground">Universal mount system</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8: Final CTA */}
       <section id="email-capture" className="section-full bg-background py-24">
         <div className="text-center max-w-3xl mx-auto space-y-12">
           <div className="space-y-8">
@@ -215,7 +351,7 @@ const AuraLanding = () => {
               className="section-headline fade-in-up"
               data-animate-id="final-title"
             >
-              The Future of Aerial Vision is Coming.
+              The Future of Aerial Intelligence is Here.
             </h2>
             <p 
               className="body-large text-muted-foreground fade-in-up"
