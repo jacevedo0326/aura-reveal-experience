@@ -2,57 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Aura - Premium Dark Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors */
+    --background: 0 0% 0%;  /* True black */
+    --foreground: 0 0% 100%;  /* Pure white */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --hero-bg: 210 11% 7%;  /* Deep charcoal for variations */
+    --section-bg: 0 0% 3%;  /* Slightly lighter black */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Primary is our signature amber-orange */
+    --primary: 36 100% 50%;  /* #FF9900 in HSL */
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 36 100% 60%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 36 100% 50%;
 
-    --sidebar-background: 0 0% 98%;
+    --radius: 0.75rem;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0%) 0%, hsl(210 11% 7%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(36 100% 50%) 0%, hsl(36 100% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 0%) 0%, hsl(0 0% 3%) 100%);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Premium Shadows & Effects */
+    --shadow-premium: 0 25px 50px -12px hsl(0 0% 0% / 0.8);
+    --shadow-glow: 0 0 40px hsl(36 100% 50% / 0.3);
+    --shadow-subtle: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animation Timing */
+    --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 1s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .dark {
@@ -94,12 +97,68 @@ All colors MUST be HSL.
   }
 }
 
+/* Premium Animation System */
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Premium Typography */
+  .hero-text {
+    @apply text-6xl md:text-8xl font-bold leading-none tracking-tight;
+  }
+  
+  .section-headline {
+    @apply text-4xl md:text-6xl font-bold leading-tight tracking-tight;
+  }
+  
+  .body-large {
+    @apply text-xl md:text-2xl leading-relaxed font-light;
+  }
+
+  /* Premium Animations */
+  .fade-in-up {
+    @apply opacity-0 translate-y-12 transition-all duration-700 ease-out;
+  }
+  
+  .fade-in-up.animate {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .fade-in {
+    @apply opacity-0 transition-opacity duration-1000 ease-out;
+  }
+  
+  .fade-in.animate {
+    @apply opacity-100;
+  }
+
+  /* Premium Effects */
+  .glow-accent {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .gradient-text {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Full Screen Sections */
+  .section-full {
+    @apply min-h-screen flex items-center justify-center px-6 md:px-12;
   }
 }
