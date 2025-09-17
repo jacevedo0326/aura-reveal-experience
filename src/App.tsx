@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import AuraLanding from "./pages/AuraLanding";
 import OurStory from "./pages/OurStory";
 import AuraInsights from "./pages/AuraInsights";
+import UseCases from "./pages/UseCases";
+import TechSpecs from "./pages/TechSpecs";
 import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/" element={<AuraLanding />} />
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/insights" element={<AuraInsights />} />
+          <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/tech-specs" element={<TechSpecs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

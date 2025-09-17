@@ -25,7 +25,6 @@ const Navbar = () => {
             </NavLink>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.slice(1).map((item) => (
@@ -43,6 +42,30 @@ const Navbar = () => {
                   {item.name}
                 </NavLink>
               ))}
+              <NavLink
+                to="/use-cases"
+                className={({ isActive }) =>
+                  `px-3 py-2 text-sm font-medium transition-colors duration-300 ${
+                    isActive
+                      ? 'text-primary'
+                      : 'text-white hover:text-primary'
+                  }`
+                }
+              >
+                Use Cases
+              </NavLink>
+              <NavLink
+                to="/tech-specs"
+                className={({ isActive }) =>
+                  `px-3 py-2 text-sm font-medium transition-colors duration-300 ${
+                    isActive
+                      ? 'text-primary'
+                      : 'text-white hover:text-primary'
+                  }`
+                }
+              >
+                Tech Specs
+              </NavLink>
             </div>
           </div>
 
@@ -78,6 +101,32 @@ const Navbar = () => {
                 {item.name}
               </NavLink>
             ))}
+            <NavLink
+              to="/use-cases"
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `block px-3 py-2 text-base font-medium transition-colors duration-300 ${
+                  isActive
+                    ? 'text-primary'
+                    : 'text-white hover:text-primary'
+                }`
+              }
+            >
+              Use Cases
+            </NavLink>
+            <NavLink
+              to="/tech-specs"
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `block px-3 py-2 text-base font-medium transition-colors duration-300 ${
+                  isActive
+                    ? 'text-primary'
+                    : 'text-white hover:text-primary'
+                }`
+              }
+            >
+              Tech Specs
+            </NavLink>
           </div>
         </div>
       )}

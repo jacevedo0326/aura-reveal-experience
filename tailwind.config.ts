@@ -62,7 +62,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'system-ui', 'sans-serif'],
+        'sf': ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'SF Compact Display', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
