@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import AuraLanding from "./pages/AuraLanding";
 import OurStory from "./pages/OurStory";
 import AuraInsights from "./pages/AuraInsights";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<AuraLanding />} />
           <Route path="/our-story" element={<OurStory />} />
