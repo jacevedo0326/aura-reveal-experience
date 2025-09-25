@@ -70,18 +70,27 @@ const AuraReveal = () => {
           {/* Massive Apple-style headline */}
           <h1 className="apple-display-xl mb-6">
             <span className="block">Aura</span>
-            <span className="block gradient-text">Wearable</span>
+            <span className="block gradient-text">Aware 360</span>
           </h1>
           
           {/* Apple-style subtitle */}
           <p className="apple-subheadline mb-12 max-w-3xl mx-auto">
-            Revolutionary. Personal. Powerful.
+            Revolutionary environmental awareness.<br />
+            Professional situational intelligence.
           </p>
           
-          {/* Pricing - Apple style */}
-          <div className="mb-12">
-            <p className="apple-headline mb-2">From $2,999</p>
-            <p className="text-lg text-muted-foreground">or $249.92/mo. for 12 mo.*</p>
+          {/* Product lineup */}
+          <div className="mb-12 space-y-4">
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+              <div className="text-center">
+                <p className="apple-headline mb-2">Aura Aware 360</p>
+                <p className="text-lg text-muted-foreground">From $2,999</p>
+              </div>
+              <div className="text-center">
+                <p className="apple-headline mb-2 gradient-text">Aura ISR-360 Pro</p>
+                <p className="text-lg text-muted-foreground">From $4,999</p>
+              </div>
+            </div>
           </div>
           
           {/* CTA Button */}
@@ -103,7 +112,7 @@ const AuraReveal = () => {
           >
             <img 
               src={auraHero} 
-              alt="Aura Wearable Device"
+              alt="Aura Aware 360 and ISR-360 Pro"
               className="w-full h-full object-cover opacity-40"
             />
           </div>
@@ -117,26 +126,30 @@ const AuraReveal = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div ref={aiRef} className="fade-in-up">
             <h2 className="apple-display-lg mb-6">
-              Built for
+              360-degree
               <br />
-              <span className="gradient-text">AI Intelligence</span>
+              <span className="gradient-text">Awareness</span>
             </h2>
             <p className="apple-body mb-8">
-              Personal, private, powerful AI processing at the edge. 
-              Experience the future of augmented intelligence.
+              Complete environmental monitoring with AI-powered threat detection. 
+              See everything. Miss nothing.
             </p>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Real-time environmental analysis</span>
+                <span className="text-lg">360° environmental scanning</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Predictive health monitoring</span>
+                <span className="text-lg">Real-time threat analysis</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span className="text-lg">Adaptive behavior learning</span>
+                <span className="text-lg">Adaptive intelligence learning</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-lg">ISR-grade surveillance (Pro model)</span>
               </div>
             </div>
           </div>
@@ -155,28 +168,28 @@ const AuraReveal = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div ref={chipRef} className="fade-in-up">
             <h2 className="apple-display-lg mb-6">
-              <span className="gradient-text">A18 Bionic</span>
+              <span className="gradient-text">Neural Engine</span>
               <br />
-              Impossible made possible.
+              Military-grade intelligence.
             </h2>
             <p className="apple-body mb-16 max-w-3xl mx-auto">
-              The most advanced neural engine ever created. 
-              Ready for whatever's impossible.
+              Advanced AI processing for real-time situational awareness. 
+              Professional intelligence at the edge.
             </p>
             
             {/* Performance Stats - Apple Style */}
             <div className="grid md:grid-cols-3 gap-12 mb-16">
               <div>
-                <div className="apple-display-md gradient-text mb-2">50%</div>
-                <p className="text-lg text-muted-foreground">Faster processing</p>
+                <div className="apple-display-md gradient-text mb-2">360°</div>
+                <p className="text-lg text-muted-foreground">Coverage radius</p>
               </div>
               <div>
-                <div className="apple-display-md gradient-text mb-2">10x</div>
-                <p className="text-lg text-muted-foreground">Better efficiency</p>
+                <div className="apple-display-md gradient-text mb-2">50m</div>
+                <p className="text-lg text-muted-foreground">Detection range</p>
               </div>
               <div>
                 <div className="apple-display-md gradient-text mb-2">24/7</div>
-                <p className="text-lg text-muted-foreground">Always-on capability</p>
+                <p className="text-lg text-muted-foreground">Continuous monitoring</p>
               </div>
             </div>
             
@@ -201,18 +214,18 @@ const AuraReveal = () => {
           </div>
           <div ref={batteryRef} className="fade-in-up order-1 lg:order-2">
             <h2 className="apple-display-lg mb-6">
-              Longest battery life
+              Mission-critical
               <br />
-              <span className="gradient-text">ever in a wearable</span>
+              <span className="gradient-text">endurance</span>
             </h2>
             <p className="apple-body mb-8">
-              Up to 7 days of all-day use. 
-              The power to keep going, whatever the mission.
+              Extended operational capability for professional use. 
+              Power that matches your mission requirements.
             </p>
             <div className="space-y-6">
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-lg font-medium">Normal Use</span>
+                  <span className="text-lg font-medium">Aware 360 - Standard</span>
                   <span className="text-lg text-primary">7 days</span>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-2">
@@ -221,11 +234,20 @@ const AuraReveal = () => {
               </div>
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-lg font-medium">Intensive Mode</span>
-                  <span className="text-lg text-primary">48 hours</span>
+                  <span className="text-lg font-medium">ISR-360 Pro - Surveillance</span>
+                  <span className="text-lg text-primary">72 hours</span>
                 </div>
                 <div className="w-full bg-secondary rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full w-4/5"></div>
+                  <div className="bg-primary h-2 rounded-full w-5/6"></div>
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-lg font-medium">Emergency Mode</span>
+                  <span className="text-lg text-primary">14 days</span>
+                </div>
+                <div className="w-full bg-secondary rounded-full h-2">
+                  <div className="bg-primary h-2 rounded-full w-3/4"></div>
                 </div>
               </div>
             </div>
@@ -238,13 +260,13 @@ const AuraReveal = () => {
         <div className="max-w-7xl mx-auto text-center">
           <div ref={displayRef} className="fade-in-up">
             <h2 className="apple-display-lg mb-6">
-              Retina Display
+              Professional HUD
               <br />
-              <span className="gradient-text">Brilliant in any light</span>
+              <span className="gradient-text">Combat-ready display</span>
             </h2>
             <p className="apple-body mb-16 max-w-3xl mx-auto">
-              2000 nits peak brightness. True-to-life colors. 
-              Optimized for outdoor visibility and all-day comfort.
+              Military-spec heads-up display. Crystal clear visibility in any environment. 
+              Tactical information when you need it most.
             </p>
             
             <div className="relative max-w-4xl mx-auto">
@@ -263,35 +285,50 @@ const AuraReveal = () => {
       <section className="min-h-screen flex items-center justify-center px-6 py-24">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="apple-display-xl mb-8">
-            <span className="gradient-text">Aura</span>
+            <span className="gradient-text">Aura Aware</span>
             <br />
-            The future is here.
+            Professional awareness.
           </h2>
           <p className="apple-subheadline mb-12">
-            Revolutionary wearable technology. 
+            Two models. Infinite possibilities. 
             <br />
-            Available for pre-order now.
+            Choose your level of professional capability.
           </p>
           
-          <div className="space-y-6">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary-glow text-primary-foreground px-12 py-4 text-xl font-medium rounded-full transition-all duration-300 hover:scale-105 shadow-glow mr-4"
-            >
-              Pre-order Aura
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-12 py-4 text-xl font-medium rounded-full transition-all duration-300"
-            >
-              Learn more
-            </Button>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="text-center p-6 border border-border rounded-2xl">
+              <h3 className="text-2xl font-bold mb-4">Aura Aware 360</h3>
+              <p className="text-lg text-muted-foreground mb-6">Complete situational awareness for professionals</p>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-3 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105"
+              >
+                Pre-order - $2,999
+              </Button>
+            </div>
+            
+            <div className="text-center p-6 border-2 border-primary rounded-2xl relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">Pro</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 gradient-text">Aura ISR-360 Pro</h3>
+              <p className="text-lg text-muted-foreground mb-6">Military-grade intelligence and reconnaissance</p>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-3 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105 shadow-glow"
+              >
+                Pre-order - $4,999
+              </Button>
+            </div>
           </div>
           
-          <p className="text-lg text-muted-foreground mt-8">
-            From $2,999 or $249.92/mo. for 12 mo.*
-          </p>
+          <Button 
+            variant="outline" 
+            size="lg"
+            className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg font-medium rounded-full transition-all duration-300"
+          >
+            Compare models
+          </Button>
         </div>
       </section>
     </main>
