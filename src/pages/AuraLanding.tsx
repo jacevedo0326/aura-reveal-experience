@@ -622,7 +622,7 @@ const AuraLanding = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-bold font-sf mb-4">Aura Intelligence</h3>
+              <h3 className="text-xl font-bold font-sf mb-4">AuraAero</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Revolutionizing aerial intelligence with 360° vision and AI-powered insights.
               </p>

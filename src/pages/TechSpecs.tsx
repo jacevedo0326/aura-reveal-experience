@@ -9,7 +9,7 @@ const TechSpecs = () => {
   const { animatedElements } = useScrollAnimation();
 
   useEffect(() => {
-    document.title = 'Technical Specifications - Aura Intelligence';
+  document.title = 'Technical Specifications - AuraAero';
   }, []);
 
   const specifications = [

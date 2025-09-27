@@ -9,7 +9,7 @@ const UseCases = () => {
   const { animatedElements } = useScrollAnimation();
 
   useEffect(() => {
-    document.title = 'Use Cases - Aura Intelligence';
+  document.title = 'Use Cases - AuraAero';
   }, []);
 
   const useCases = [

@@ -25,7 +25,7 @@ const Footer = () => (
         <a href="/tech-specs" className="hover:text-primary transition-colors">Tech Specs</a>
       </div>
       <div className="text-white text-xs opacity-60 text-center md:text-right">
-        © {new Date().getFullYear()} Aura Intelligence. All rights reserved.
+  © {new Date().getFullYear()} AuraAero. All rights reserved.
       </div>
     </div>
   </footer>

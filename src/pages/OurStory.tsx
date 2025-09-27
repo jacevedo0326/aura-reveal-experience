@@ -6,7 +6,7 @@ const OurStory = () => {
   const { animatedElements } = useScrollAnimation();
 
   useEffect(() => {
-    document.title = 'Our Story - Aura Intelligence';
+  document.title = 'Our Story - AuraAero';
   }, []);
 
   return (
