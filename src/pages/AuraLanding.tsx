@@ -617,40 +617,6 @@ const AuraLanding = () => {
         </div>
       </section>
 
-      {/* Enhanced Footer */}
-      <footer className="bg-card border-t border-border/20 py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <div>
-              <h3 className="text-xl font-bold font-sf mb-4">AuraAero</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Revolutionizing aerial intelligence with 360° vision and AI-powered insights.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <div className="space-y-2 text-sm">
-                <Link to="/use-cases" className="block text-muted-foreground hover:text-primary">Use Cases</Link>
-                <Link to="/tech-specs" className="block text-muted-foreground hover:text-primary">Tech Specs</Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <div className="space-y-2 text-sm">
-                <Link to="/our-story" className="block text-muted-foreground hover:text-primary">Our Story</Link>
-                <Link to="/insights" className="block text-muted-foreground hover:text-primary">Insights</Link>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
-              <div className="space-y-2 text-sm">
-                <a href="#" className="block text-muted-foreground hover:text-primary">LinkedIn</a>
-                <a href="#" className="block text-muted-foreground hover:text-primary">Twitter</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
