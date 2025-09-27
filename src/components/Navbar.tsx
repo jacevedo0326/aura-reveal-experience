@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+
+import logo from "@/assets/logo.png";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +22,9 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <NavLink 
               to="/" 
-              className="text-xl font-bold text-white hover:text-primary transition-colors duration-300"
+              className="flex items-center h-10"
             >
-              Aura
+              <img src={logo} alt="AuraAero Logo" className="h-8 w-auto" />
             </NavLink>
           </div>
 
