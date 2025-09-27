@@ -209,14 +209,6 @@ const OurStory = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-card border-t border-border/20 py-12">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2025 Aura Intelligence. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

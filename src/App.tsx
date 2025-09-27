@@ -12,6 +12,7 @@ import UseCases from "./pages/UseCases";
 import TechSpecs from "./pages/TechSpecs";
 import AuraReveal from "./pages/AuraReveal";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -22,16 +23,21 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<AuraLanding />} />
-          <Route path="/our-story" element={<OurStory />} />
-          <Route path="/insights" element={<AuraInsights />} />
-          <Route path="/use-cases" element={<UseCases />} />
-          <Route path="/tech-specs" element={<TechSpecs />} />
-          <Route path="/reveal" element={<AuraReveal />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div className="min-h-screen flex flex-col">
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<AuraLanding />} />
+              <Route path="/our-story" element={<OurStory />} />
+              <Route path="/insights" element={<AuraInsights />} />
+              <Route path="/use-cases" element={<UseCases />} />
+              <Route path="/tech-specs" element={<TechSpecs />} />
+              <Route path="/reveal" element={<AuraReveal />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

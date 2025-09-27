@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+aura-reveal-experience/
 
-## Project info
+# Aura Reveal Experience
 
-**URL**: https://lovable.dev/projects/d7c6fc4c-e7ea-4b25-9f91-7cf6fc1d27a4
+A modern React + Vite + Tailwind CSS project.
 
-## How can I edit this code?
+## Project Structure
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/d7c6fc4c-e7ea-4b25-9f91-7cf6fc1d27a4) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+aura-reveal-experience/
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── src/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── assets/
+│   │   ├── aerial-panorama.jpg
+│   │   ├── aura-ai-visualization.jpg
+│   │   ├── aura-aware.jpg
+│   │   ├── aura-detail-macro.jpg
+│   │   ├── aura-hero.jpg
+│   │   ├── aura-lifestyle-1.jpg
+│   │   ├── aura-use-case-law.jpg
+│   │   └── aura-use-case-sar.jpg
+│   ├── components/
+│   │   ├── EmailCapture.tsx
+│   │   ├── Navbar.tsx
+│   │   └── ui/
+│   │       ├── accordion.tsx
+│   │       ├── ... (many UI components)
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   ├── use-toast.ts
+│   │   └── useScrollAnimation.ts
+│   ├── lib/
+│   │   └── utils.ts
+│   ├── main.tsx
+│   ├── pages/
+│   │   ├── AuraInsights.tsx
+│   │   ├── AuraLanding.tsx
+│   │   ├── Index.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── OurStory.tsx
+│   │   ├── TechSpecs.tsx
+│   │   └── UseCases.tsx
+│   └── vite-env.d.ts
+├── tailwind.config.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
-**Edit a file directly in GitHub**
+## Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
 
-**Use GitHub Codespaces**
+- [Bun](https://bun.sh/) (recommended)
+- Node.js (if you prefer npm/yarn)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Install Bun
 
-## What technologies are used for this project?
+If you don't have Bun installed, run:
 
-This project is built with:
+```sh
+curl -fsSL https://bun.sh/install | bash
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Then restart your terminal.
 
-## How can I deploy this project?
+### Install dependencies
 
-Simply open [Lovable](https://lovable.dev/projects/d7c6fc4c-e7ea-4b25-9f91-7cf6fc1d27a4) and click on Share -> Publish.
+```sh
+bun install
+```
 
-## Can I connect a custom domain to my Lovable project?
+### Run the development server
 
-Yes, you can!
+```sh
+bun run dev
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Open [http://localhost:8080](http://localhost:8080) to view the app.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Build for production
+
+```sh
+bun run build
+```
+
+### Preview the production build
+
+```sh
+bun run preview
+```

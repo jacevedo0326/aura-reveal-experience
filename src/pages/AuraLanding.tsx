@@ -649,11 +649,6 @@ const AuraLanding = () => {
               </div>
             </div>
           </div>
-          <div className="text-center pt-8 border-t border-border/20">
-            <p className="text-muted-foreground text-sm">
-              © 2025 Aura Intelligence. All Rights Reserved. | Privacy Policy | Terms of Service
-            </p>
-          </div>
         </div>
       </footer>
     </div>
