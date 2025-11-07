@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraAware from '@/assets/aura-aware.jpg';
-import auraDetailMacro from '@/assets/aura-detail-macro.jpg';
+import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
+import auraAware from '@/assets/Draft animation and renders_/Visuals/Renders/still image.1.png';
+import auraDetailMacro from '@/assets/Draft animation and renders_/Visuals/Renders/still image.4.png';
 import { Cpu, Camera, Shield, Zap, Wifi, Thermometer } from 'lucide-react';
 
 const TechSpecs = () => {
@@ -210,7 +210,7 @@ const TechSpecs = () => {
               <h2 className="feature-headline font-sf mb-4">Aura Aware 360</h2>
               <p className="text-primary font-semibold text-lg">Site Scanning & Reality Capture</p>
               <div className="mt-6 inline-flex items-center px-6 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <span className="text-primary font-medium">Starting at $2,299</span>
+                <span className="text-primary font-medium">Starting at $499</span>
               </div>
             </div>
             <div className="text-center">
@@ -220,11 +220,16 @@ const TechSpecs = () => {
                   alt="Aura ISR-360 Pro" 
                   className="w-full max-w-sm mx-auto rounded-3xl shadow-premium"
                 />
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="inline-flex items-center px-4 py-1.5 bg-primary text-primary-foreground rounded-full text-sm font-medium shadow-lg">
+                    Coming Soon
+                  </span>
+                </div>
               </div>
               <h2 className="feature-headline font-sf mb-4">Aura ISR-360 Pro</h2>
               <p className="text-primary font-semibold text-lg">Mission-Critical Intelligence</p>
               <div className="mt-6 inline-flex items-center px-6 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <span className="text-primary font-medium">Starting at $4,899</span>
+                <span className="text-primary font-medium">Coming Soon</span>
               </div>
             </div>
           </div>
@@ -260,7 +265,10 @@ const TechSpecs = () => {
                     <div className="font-semibold">Aura Aware 360</div>
                   </div>
                   <div className="bg-card/30 p-6 text-center">
-                    <div className="font-semibold">Aura ISR-360 Pro</div>
+                    <div className="font-semibold flex items-center justify-center gap-2">
+                      <span>Aura ISR-360 Pro</span>
+                      <span className="text-xs font-normal bg-primary/10 text-primary px-2 py-1 rounded-full">Coming Soon</span>
+                    </div>
                   </div>
 
                   {/* Specifications */}

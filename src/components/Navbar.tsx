@@ -10,7 +10,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Aura', path: '/', isLogo: true },
     { name: 'Our Story', path: '/our-story' },
-    { name: 'Insights', path: '/insights' },
+    // { name: 'Insights', path: '/insights' }, // Hidden - not ready yet
     { name: 'Reveal', path: '/reveal' },
   ];
 

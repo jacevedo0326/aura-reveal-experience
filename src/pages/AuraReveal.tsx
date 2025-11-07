@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraDetail from '@/assets/aura-detail-macro.jpg';
+import VideoCarousel from '@/components/VideoCarousel';
+import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
+import auraDetail from '@/assets/Draft animation and renders_/Visuals/Renders/still image.4.png';
 import auraLifestyle from '@/assets/aura-lifestyle-1.jpg';
-import auraSar from '@/assets/aura-use-case-sar.jpg';
+import auraSar from '@/assets/video3.mp4';
 import auraAI from '@/assets/aura-ai-visualization.jpg';
 
 const AuraReveal = () => {
@@ -87,7 +88,12 @@ const AuraReveal = () => {
                 <p className="text-lg text-muted-foreground">From $2,999</p>
               </div>
               <div className="text-center">
-                <p className="apple-headline mb-2 gradient-text">Aura ISR-360 Pro</p>
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <p className="apple-headline gradient-text">Aura ISR-360 Pro</p>
+                  <span className="inline-flex items-center px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-xs font-medium text-primary">
+                    Coming Soon
+                  </span>
+                </div>
                 <p className="text-lg text-muted-foreground">From $4,999</p>
               </div>
             </div>
@@ -193,10 +199,15 @@ const AuraReveal = () => {
               </div>
             </div>
             
-            <img 
-              src={auraDetail} 
-              alt="Aura Detail"
-              className="w-full max-w-4xl mx-auto rounded-2xl shadow-premium"
+            <VideoCarousel 
+              videos={[
+                '/animation1.mp4',
+                '/animation2.mp4',
+                '/animation3.mp4',
+                '/animation4.mp4'
+              ]}
+              className="w-full max-w-4xl mx-auto h-[600px] shadow-premium"
+              playbackSpeed={0.5}
             />
           </div>
         </div>
@@ -206,9 +217,12 @@ const AuraReveal = () => {
       <section className="min-h-screen flex items-center justify-center px-6 py-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative order-2 lg:order-1">
-            <img 
+            <video 
               src={auraSar} 
-              alt="Search and Rescue Use Case"
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full rounded-2xl shadow-premium"
             />
           </div>
@@ -308,16 +322,18 @@ const AuraReveal = () => {
             </div>
             
             <div className="text-center p-6 border-2 border-primary rounded-2xl relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 flex gap-2">
                 <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">Pro</span>
+                <span className="bg-primary/10 border border-primary/20 text-primary px-4 py-1 rounded-full text-sm font-medium">Coming Soon</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 gradient-text">Aura ISR-360 Pro</h3>
               <p className="text-lg text-muted-foreground mb-6">Military-grade intelligence and reconnaissance</p>
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary-glow text-primary-foreground px-8 py-3 text-lg font-medium rounded-full transition-all duration-300 hover:scale-105 shadow-glow"
+                disabled
+                className="bg-muted text-muted-foreground px-8 py-3 text-lg font-medium rounded-full cursor-not-allowed"
               >
-                Pre-order - $4,999
+                Coming Soon - $4,999
               </Button>
             </div>
           </div>

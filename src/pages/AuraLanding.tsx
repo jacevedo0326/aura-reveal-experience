@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import { EmailCapture } from '@/components/EmailCapture';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraAware from '@/assets/aura-aware.jpg';
+import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
+import auraAware from '@/assets/Draft animation and renders_/Visuals/Renders/still image.1.png';
 import auraLifestyle from '@/assets/aura-lifestyle-1.jpg';
-import auraDetailMacro from '@/assets/aura-detail-macro.jpg';
-import auraUseCaseSar from '@/assets/aura-use-case-sar.jpg';
+import auraDetailMacro from '@/assets/Draft animation and renders_/Visuals/Renders/still image.4.png';
+import auraUseCaseSar from '@/assets/video1_red.mp4';
 import auraUseCaseLaw from '@/assets/aura-use-case-law.jpg';
 import auraAiVisualization from '@/assets/aura-ai-visualization.jpg';
 import aerialPanorama from '@/assets/aerial-panorama.jpg';
@@ -72,7 +72,7 @@ const AuraLanding = () => {
             data-animate-id="hero-description"
             style={{ animationDelay: '0.4s' }}
           >
-            The world's first 360° Aerial Intelligence Platform. Revolutionary drone payload technology that delivers unprecedented situational awareness.
+            Revolutionary 360° vision platform for aerial and stationary applications. From mission-critical drone operations to immersive cultural experiences and smart collaboration spaces—see everything, everywhere.
           </p>
           <div 
             className="space-y-6 fade-in-up"
@@ -110,7 +110,7 @@ const AuraLanding = () => {
               data-animate-id="big-idea-text"
               style={{ animationDelay: '0.2s' }}
             >
-              This is not a better camera. This is a new way to see. A revolutionary aerial intelligence platform that delivers a single, seamless source of truth from every angle, all the time.
+              This is not a better camera. This is a new way to see. A revolutionary 360° vision platform that delivers a single, seamless source of truth from every angle, all the time—whether in the sky or on the ground.
             </p>
           </div>
         </div>
@@ -290,13 +290,18 @@ const AuraLanding = () => {
             </div>
             <div className="lg:order-1 space-y-8">
               <div className="space-y-4">
-                <h2 
-                  className="section-headline fade-in-up font-sf"
-                  data-animate-id="isr-title"
-                  style={{ animationDelay: '0.1s' }}
-                >
-                  Aura ISR-360 Pro
-                </h2>
+                <div className="flex items-center gap-4 flex-wrap">
+                  <h2 
+                    className="section-headline fade-in-up font-sf"
+                    data-animate-id="isr-title"
+                    style={{ animationDelay: '0.1s' }}
+                  >
+                    Aura ISR-360 Pro
+                  </h2>
+                  <span className="inline-flex items-center px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary">
+                    Coming Soon
+                  </span>
+                </div>
                 <h3 
                   className="feature-headline text-primary fade-in-up"
                   data-animate-id="isr-tagline"
@@ -383,33 +388,36 @@ const AuraLanding = () => {
               className="section-headline fade-in-up mb-6"
               data-animate-id="usecases-title"
             >
-              Where Lives Depend on Intelligence
+              Transforming Vision Across Industries
             </h2>
             <p 
               className="body-large text-muted-foreground max-w-3xl mx-auto fade-in-up"
               data-animate-id="usecases-subtitle"
               style={{ animationDelay: '0.2s' }}
             >
-              From search and rescue to tactical operations, Aura delivers mission-critical capabilities when failure is not an option.
+              From life-saving missions to immersive experiences and smart collaboration—Aura's 360° vision technology adapts to your world.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div 
               className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up"
               data-animate-id="usecase-1"
               style={{ animationDelay: '0.1s' }}
             >
-              <img 
+              <video 
                 src={auraUseCaseSar} 
-                alt="Search & Rescue Operations"
-                className="w-full h-80 object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <h3 className="feature-headline font-sf mb-3">Search & Rescue</h3>
-                <p className="body-medium text-gray-200">
-                  5x larger coverage area. 90% faster detection. Lives saved.
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold font-sf mb-2">Search & Rescue</h3>
+                <p className="text-sm text-gray-200">
+                  5x coverage. 90% faster detection.
                 </p>
               </div>
             </div>
@@ -417,18 +425,90 @@ const AuraLanding = () => {
             <div 
               className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up"
               data-animate-id="usecase-2"
-              style={{ animationDelay: '0.2s' }}
+              style={{ animationDelay: '0.15s' }}
             >
               <img 
                 src={auraUseCaseLaw} 
                 alt="Law Enforcement Operations"
-                className="w-full h-80 object-cover"
+                className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <h3 className="feature-headline font-sf mb-3">Tactical Operations</h3>
-                <p className="body-medium text-gray-200">
-                  Complete perimeter awareness. Multi-target tracking. Enhanced officer safety.
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold font-sf mb-2">Tactical Operations</h3>
+                <p className="text-sm text-gray-200">
+                  Complete awareness. Enhanced safety.
+                </p>
+              </div>
+            </div>
+
+            <div 
+              className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up"
+              data-animate-id="usecase-3"
+              style={{ animationDelay: '0.2s' }}
+            >
+              <img 
+                src={auraAware} 
+                alt="Smart Meeting Rooms"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold font-sf mb-2">Smart Meeting Rooms</h3>
+                <p className="text-sm text-gray-200">
+                  100% visibility. AI-powered tracking.
+                </p>
+              </div>
+            </div>
+
+            <div 
+              className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up bg-gradient-to-br from-primary/20 via-background to-background"
+              data-animate-id="usecase-4"
+              style={{ animationDelay: '0.25s' }}
+            >
+              <div className="h-64 flex items-end p-6">
+                <div>
+                  <h3 className="text-xl font-semibold font-sf mb-2">Cultural Events</h3>
+                  <p className="text-sm text-gray-200">
+                    Museum-grade capture. Global reach.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up"
+              data-animate-id="usecase-5"
+              style={{ animationDelay: '0.3s' }}
+            >
+              <img 
+                src={aerialPanorama} 
+                alt="Virtual Tours & Experiences"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold font-sf mb-2">Virtual Tours</h3>
+                <p className="text-sm text-gray-200">
+                  10x faster. 24/7 access.
+                </p>
+              </div>
+            </div>
+
+            <div 
+              className="relative overflow-hidden rounded-3xl shadow-premium fade-in-up"
+              data-animate-id="usecase-6"
+              style={{ animationDelay: '0.35s' }}
+            >
+              <img 
+                src={auraHero} 
+                alt="Critical Infrastructure"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-6 left-6 right-6">
+                <h3 className="text-xl font-semibold font-sf mb-2">Infrastructure</h3>
+                <p className="text-sm text-gray-200">
+                  AI detection. Immediate response.
                 </p>
               </div>
             </div>

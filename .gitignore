@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Large media files - source assets not needed in repo
+src/assets/Draft animation and renders_/
+src/assets/*.zip
+drive-download-*.zip
+*.avi
+*.MOV
+
+# Keep only specific videos used in the app
+!src/assets/video1_red.mp4
+!src/assets/video3.mp4

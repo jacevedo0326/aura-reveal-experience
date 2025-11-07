@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraUseCaseSar from '@/assets/aura-use-case-sar.jpg';
+import auraUseCaseSar from '@/assets/video1_red.mp4';
 import auraUseCaseLaw from '@/assets/aura-use-case-law.jpg';
-import auraHero from '@/assets/aura-hero.jpg';
-import { Shield, Search, Eye, MapPin, Clock, Target } from 'lucide-react';
+import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
+import auraAware from '@/assets/Draft animation and renders_/Visuals/Renders/still image.1.png';
+import aerialPanorama from '@/assets/aerial-panorama.jpg';
+import auraAiVisualization from '@/assets/aura-ai-visualization.jpg';
+import { Shield, Search, Eye, MapPin, Clock, Target, Users, Music, Globe } from 'lucide-react';
 
 const UseCases = () => {
   const { animatedElements } = useScrollAnimation();
@@ -48,6 +51,42 @@ const UseCases = () => {
         { label: "Threat Detection", value: "AI-Powered" },
         { label: "Response Time", value: "Immediate" }
       ]
+    },
+    {
+      title: "Smart Meeting Rooms",
+      subtitle: "Redefining hybrid collaboration.",
+      description: "Transform your meeting spaces with Aura's intelligent 360° coverage. One camera captures every participant simultaneously with AI-powered speaker tracking and automatic framing. Enable truly immersive remote participation for hybrid teams without complex multi-camera setups.",
+      image: auraAware,
+      icon: Users,
+      stats: [
+        { label: "Participant Coverage", value: "100% Visibility" },
+        { label: "Speaker Tracking", value: "AI-Powered" },
+        { label: "Setup Time", value: "Under 5 Minutes" }
+      ]
+    },
+    {
+      title: "Live Performance & Cultural Events",
+      subtitle: "Capture every moment, every angle.",
+      description: "From orchestra halls to art galleries, Aura delivers museum-quality documentation and immersive experiences. Create virtual tours that bring culture to global audiences, archive performances for posterity, and enable interactive exploration of exhibits from anywhere in the world.",
+      image: auraAiVisualization,
+      icon: Music,
+      stats: [
+        { label: "Video Quality", value: "Museum-Grade" },
+        { label: "Experience", value: "360° Immersive" },
+        { label: "Global Reach", value: "Unlimited" }
+      ]
+    },
+    {
+      title: "Virtual Tours & Experiences",
+      subtitle: "Showcase spaces like never before.",
+      description: "Revolutionize how you present properties, venues, and educational spaces. Aura's professional 360° capture creates interactive virtual tours that engage visitors and drive decisions. Real estate showings, campus tours, and venue marketing—all accessible 24/7 from a single capture.",
+      image: aerialPanorama,
+      icon: Globe,
+      stats: [
+        { label: "Tour Creation", value: "10x Faster" },
+        { label: "Availability", value: "24/7 Access" },
+        { label: "Engagement", value: "3x Higher" }
+      ]
     }
   ];
 
@@ -60,14 +99,14 @@ const UseCases = () => {
             className="hero-text mb-8 fade-in-up gradient-text"
             data-animate-id="hero-title"
           >
-            When Every Second Counts
+            Transforming Vision Across Industries
           </h1>
           <p 
             className="body-large text-muted-foreground fade-in-up"
             data-animate-id="hero-subtitle"
             style={{ animationDelay: '0.2s' }}
           >
-            Discover how Aura is transforming critical missions across industries with unprecedented situational awareness.
+            From life-saving missions to cultural experiences and immersive collaboration—discover how Aura's 360° vision technology is revolutionizing the way we see and share our world.
           </p>
         </div>
       </section>
@@ -86,11 +125,24 @@ const UseCases = () => {
                 data-animate-id={`usecase-${index}-image`}
               >
                 <div className="relative overflow-hidden rounded-3xl shadow-premium">
-                  <img 
-                    src={useCase.image} 
-                    alt={useCase.title}
-                    className="w-full h-[400px] lg:h-[500px] object-cover"
-                  />
+                  {useCase.title === "Search & Rescue" ? (
+                    <video 
+                      src={useCase.image} 
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-[400px] lg:h-[500px] object-cover"
+                    />
+                  ) : useCase.title === "Live Performance & Cultural Events" ? (
+                    <div className="w-full h-[400px] lg:h-[500px] bg-gradient-to-br from-primary/20 via-background to-background" />
+                  ) : (
+                    <img 
+                      src={useCase.image} 
+                      alt={useCase.title}
+                      className="w-full h-[400px] lg:h-[500px] object-cover"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="flex items-center space-x-3 mb-3">
