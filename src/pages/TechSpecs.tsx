@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
-import auraAware from '@/assets/Draft animation and renders_/Visuals/Renders/still image.1.png';
-import auraDetailMacro from '@/assets/Draft animation and renders_/Visuals/Renders/still image.4.png';
+import auraHero from '@/assets/aura-hero.jpg';
+import auraAware from '@/assets/aura-aware.jpg';
+import auraDetailMacro from '@/assets/aura-detail-macro.jpg';
 import { Cpu, Camera, Shield, Zap, Wifi, Thermometer } from 'lucide-react';
 
 const TechSpecs = () => {

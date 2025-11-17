@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
-import auraAware from '@/assets/Draft animation and renders_/Visuals/Renders/still image.1.png';
+import auraHero from '@/assets/aura-hero.jpg';
+import auraAware from '@/assets/aura-aware.jpg';
 import aerialPanorama from '@/assets/aerial-panorama.jpg';
 
 const AuraInsights = () => {

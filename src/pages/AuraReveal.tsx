@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import VideoCarousel from '@/components/VideoCarousel';
-import auraHero from '@/assets/Draft animation and renders_/Visuals/Renders/HeroShot.1.png';
-import auraDetail from '@/assets/Draft animation and renders_/Visuals/Renders/still image.4.png';
+import auraHero from '@/assets/aura-hero.jpg';
+import auraDetail from '@/assets/aura-detail-macro.jpg';
 import auraLifestyle from '@/assets/aura-lifestyle-1.jpg';
 import auraSar from '@/assets/video3.mp4';
 import auraAI from '@/assets/aura-ai-visualization.jpg';
