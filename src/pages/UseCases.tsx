@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraUseCaseSar from '@/assets/video1_red.mp4';
-import auraUseCaseLaw from '@/assets/aura-use-case-law.jpg';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraAware from '@/assets/aura-aware.jpg';
-import aerialPanorama from '@/assets/aerial-panorama.jpg';
-import auraAiVisualization from '@/assets/aura-ai-visualization.jpg';
+import auraUseCaseSar from '@/assets/videos/video1_red.mp4';
+import auraUseCaseLaw from '@/assets/images/aura-use-case-law.png';
+import auraHero from '@/assets/images/aura-hero.jpg';
+import auraAware from '@/assets/images/aura-aware.jpg';
+import aerialPanorama from '@/assets/images/aerial-panorama.jpg';
+import theaterUseCaseVideo from '@/assets/videos/5431417-uhd_3840_2160_30fps.mp4';
 import { Shield, Search, Eye, MapPin, Clock, Target, Users, Music, Globe } from 'lucide-react';
 
 const UseCases = () => {
@@ -68,7 +68,7 @@ const UseCases = () => {
       title: "Live Performance & Cultural Events",
       subtitle: "Capture every moment, every angle.",
       description: "From orchestra halls to art galleries, Aura delivers museum-quality documentation and immersive experiences. Create virtual tours that bring culture to global audiences, archive performances for posterity, and enable interactive exploration of exhibits from anywhere in the world.",
-      image: auraAiVisualization,
+      image: theaterUseCaseVideo,
       icon: Music,
       stats: [
         { label: "Video Quality", value: "Museum-Grade" },
@@ -125,17 +125,19 @@ const UseCases = () => {
                 data-animate-id={`usecase-${index}-image`}
               >
                 <div className="relative overflow-hidden rounded-3xl shadow-premium">
-                  {useCase.title === "Search & Rescue" ? (
+                  {useCase.title === "Search & Rescue" || useCase.title === "Live Performance & Cultural Events" ? (
                     <video 
                       src={useCase.image} 
                       autoPlay
                       loop
                       muted
                       playsInline
-                      className="w-full h-[400px] lg:h-[500px] object-cover"
+                      className={`w-full h-[400px] lg:h-[500px] object-cover ${
+                        useCase.title === "Live Performance & Cultural Events"
+                          ? 'brightness-90'
+                          : ''
+                      }`}
                     />
-                  ) : useCase.title === "Live Performance & Cultural Events" ? (
-                    <div className="w-full h-[400px] lg:h-[500px] bg-gradient-to-br from-primary/20 via-background to-background" />
                   ) : (
                     <img 
                       src={useCase.image} 

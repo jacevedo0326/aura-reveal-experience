@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraHero from '@/assets/aura-hero.jpg';
+import auraHero from '@/assets/images/aura-hero.jpg';
 
 const OurStory = () => {
   const { animatedElements } = useScrollAnimation();

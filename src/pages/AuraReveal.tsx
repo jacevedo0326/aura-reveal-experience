@@ -1,11 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import VideoCarousel from '@/components/VideoCarousel';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraDetail from '@/assets/aura-detail-macro.jpg';
-import auraLifestyle from '@/assets/aura-lifestyle-1.jpg';
-import auraSar from '@/assets/video3.mp4';
-import auraAI from '@/assets/aura-ai-visualization.jpg';
+import auraHero from '@/assets/images/aura-hero.jpg';
+import auraLifestyle from '@/assets/images/aura-lifestyle-1.jpg';
+import auraSar from '@/assets/videos/video3.mp4';
+import auraAI from '@/assets/images/aura-ai-visualization.jpg';
+import revealVideo from '@/assets/videos/AURA_AERO _4K_Master_2B.mp4';
+import heroShot2 from '@/assets/images/HeroShot.2.png';
+import stillImage1 from '@/assets/images/still_image.1.png';
 
 const AuraReveal = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -200,14 +202,28 @@ const AuraReveal = () => {
             </div>
             
             <VideoCarousel 
-              videos={[
-                '/animation1.mp4',
-                '/animation2.mp4',
-                '/animation3.mp4',
-                '/animation4.mp4'
+              slides={[
+                {
+                  type: 'video',
+                  src: revealVideo,
+                  alt: 'Aura Aero mission reveal video',
+                  holdDuration: 5000,
+                },
+                {
+                  type: 'image',
+                  src: heroShot2,
+                  alt: 'Aura platform hero shot',
+                  holdDuration: 5000,
+                },
+                {
+                  type: 'image',
+                  src: stillImage1,
+                  alt: 'Aura platform still capture',
+                  holdDuration: 5000,
+                },
               ]}
               className="w-full max-w-4xl mx-auto h-[600px] shadow-premium"
-              playbackSpeed={0.5}
+              playbackSpeed={1}
             />
           </div>
         </div>
@@ -236,33 +252,18 @@ const AuraReveal = () => {
               Extended operational capability for professional use. 
               Power that matches your mission requirements.
             </p>
-            <div className="space-y-6">
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-lg font-medium">Aware 360 - Standard</span>
-                  <span className="text-lg text-primary">7 days</span>
-                </div>
-                <div className="w-full bg-secondary rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full w-full"></div>
-                </div>
+            <div className="space-y-4">
+              <div className="flex justify-between items-center py-3 border-b border-border/60">
+                <span className="text-lg font-medium">Aware 360 - Standard</span>
+                <span className="text-lg text-primary">7 days</span>
               </div>
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-lg font-medium">ISR-360 Pro - Surveillance</span>
-                  <span className="text-lg text-primary">72 hours</span>
-                </div>
-                <div className="w-full bg-secondary rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full w-5/6"></div>
-                </div>
+              <div className="flex justify-between items-center py-3 border-b border-border/60">
+                <span className="text-lg font-medium">ISR-360 Pro - Surveillance</span>
+                <span className="text-lg text-primary">72 hours</span>
               </div>
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-lg font-medium">Emergency Mode</span>
-                  <span className="text-lg text-primary">14 days</span>
-                </div>
-                <div className="w-full bg-secondary rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full w-3/4"></div>
-                </div>
+              <div className="flex justify-between items-center py-3">
+                <span className="text-lg font-medium">Emergency Mode</span>
+                <span className="text-lg text-primary">14 days</span>
               </div>
             </div>
           </div>

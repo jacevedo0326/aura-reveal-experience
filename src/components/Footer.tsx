@@ -1,6 +1,6 @@
 
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/images/logo.png";
 import { Linkedin, X as XIcon } from "lucide-react";
 
 const Footer = () => (

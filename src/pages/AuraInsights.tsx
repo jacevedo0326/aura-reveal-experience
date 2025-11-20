@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraAware from '@/assets/aura-aware.jpg';
-import aerialPanorama from '@/assets/aerial-panorama.jpg';
+import auraHero from '@/assets/images/aura-hero.jpg';
+import auraAware from '@/assets/images/aura-aware.jpg';
+import aerialPanorama from '@/assets/images/aerial-panorama.jpg';
 
 const AuraInsights = () => {
   const { animatedElements } = useScrollAnimation();

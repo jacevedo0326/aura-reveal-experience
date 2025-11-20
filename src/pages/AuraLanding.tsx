@@ -2,14 +2,14 @@ import { useEffect } from 'react';
 import { EmailCapture } from '@/components/EmailCapture';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Link } from 'react-router-dom';
-import auraHero from '@/assets/aura-hero.jpg';
-import auraAware from '@/assets/aura-aware.jpg';
-import auraLifestyle from '@/assets/aura-lifestyle-1.jpg';
-import auraDetailMacro from '@/assets/aura-detail-macro.jpg';
-import auraUseCaseSar from '@/assets/video1_red.mp4';
-import auraUseCaseLaw from '@/assets/aura-use-case-law.jpg';
-import auraAiVisualization from '@/assets/aura-ai-visualization.jpg';
-import aerialPanorama from '@/assets/aerial-panorama.jpg';
+import auraHero from '@/assets/images/aura-hero.jpg';
+import auraAware from '@/assets/images/aura-aware.jpg';
+import auraLifestyle from '@/assets/images/aura-lifestyle-1.jpg';
+import auraDetailMacro from '@/assets/images/aura-detail-macro.jpg';
+import auraUseCaseSar from '@/assets/videos/video1_red.mp4';
+import auraUseCaseLaw from '@/assets/images/aura-use-case-law.png';
+import auraAiVisualization from '@/assets/images/aura-ai-visualization.jpg';
+import aerialPanorama from '@/assets/images/aerial-panorama.jpg';
 import { Eye, Shield, Cpu, Camera, Zap, Target } from 'lucide-react';
 
 const AuraLanding = () => {
