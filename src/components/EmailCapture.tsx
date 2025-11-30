@@ -57,6 +57,17 @@ const brevoFontStyles = `
     text-decoration: underline;
     color: #2BB2FC;
   }
+
+  /* Fix white-on-white input text */
+  #sib-container .input,
+  .sib-form .input {
+    color: #0f172a !important;
+    background-color: #ffffff !important;
+  }
+  #sib-container .input::placeholder,
+  .sib-form .input::placeholder {
+    color: #94a3b8 !important;
+  }
 `;
 
 const brevoFormHtml = `
